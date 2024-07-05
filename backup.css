@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Veranda;
+}
+
+body {
+    background-color: #303030;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    position: absolute;
+    top: 8px;
+}
+
+.menu-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 20px;
+}
+
+header {
+    padding: 16px 0;
+    border-bottom: 1px solid #ccc;
+    ;
+}
+
+h1 {
+    color:#fff;
+    margin-left: 32px;
+}
+
+i#burguer {
+    background-color: #e90313;
+    background: #e90313;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid;
+    border-color: #e90313;
+    width: 20%;
+    left: 32px;
+    top: 32px;
+    padding-bottom: 16px;
+    
+
+    
+}
+
+i#burguer:hover{
+    background-color: #a01a23;
+    color: rgb(206, 203, 203);
+    cursor: pointer;
+}
+
+/* Estilos para o ícone de menu e o texto "Departamento" */
+#burguer {
+    display: inline-block; /* Garante que o ícone e o texto fiquem na mesma linha */
+    font-size: 22px ; /* Tamanho da fonte do ícone */
+    line-height: 1; /* Garante que o ícone e o texto fiquem alinhados verticalmente */
+    position: relative; /* Define a posição para ajustar o span */
+    font-weight: 700;
+}
+
+#burguer span {
+    left: 100%; /* Posiciona o span à direita do ícone */
+    margin-left: 10px; /* Espaçamento entre o ícone e o texto */
+    align-items: center;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    border: #424242;
+    padding: 12px;
+    background: #424242;
+    padding: 12px;
+    font-size: 32;
+    margin-left: 30%;
+    margin-right: 32px;
+    border-radius: 4px;
+}
+
+input[type="search"] {
+    padding: 10px;
+    margin-left: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+    box-sizing: border-box;
+    
+}
