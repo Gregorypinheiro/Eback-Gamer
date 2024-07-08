@@ -14,9 +14,9 @@
 <body>
     <header class="container">
         <div class="menu-container">
-            <h1>Eback Gamer</h1>
-        <i id="burguer" class="material-symbols-outlined">
-            <i class="material-symbols-outlined">menu</i>
+            <h1 id="header-title">Eback Gamer</h1>
+        <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+            <i class="material-symbols-outlined" >menu</i>
             <span>Departamentos</span>
             <i class="material-symbols-outlined">arrow_downward</i>
         </i>
@@ -24,8 +24,97 @@
             <input type="search" placeholder="Digite o que você procura">
         </form>
         </div>
-        
+        <menu id="menu-list">
+            <ul>
+                <li>
+                    Hardware
 
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">Placa Mãe</a>
+                        </li>
+                        <li>
+                            <a href="#">Processador</a>
+                        </li>
+                        <li>
+                            <a href="#">Placa de Vídeo</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    Video Games
+
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">Console</a>
+                        </li>
+                        <li>
+                            <a href="#">Manetes</a>
+                        </li>
+                        <li>
+                            <a href="#">Jogos</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </menu>
     </header>
+    <section id="about">
+    <div class="loja">
+        <img src="images/15351803600_23202d6113_b.jpg" alt="loja de infotmatica" />
+        <div>
+            <h2>Sobre a loja</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit odio voluptates deleniti, incidunt error inventore modi sequi fuga numquam mollitia! Exercitationem, cumque tenetur culpa asperiores consectetur architecto repudiandae laborum omnis.
+                </p>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit odio voluptates deleniti, incidunt error inventore modi sequi fuga numquam mollitia! Exercitationem, cumque tenetur culpa asperiores consectetur architecto repudiandae laborum omnis.
+                </p>
+                <ul class="brands-list"> 
+                    <li><img src="images/nintendo.png" alt="Nintendo"></li>
+                    <li><img src="images/xbox.png" alt="Xbox"></li>
+                    <li><img src="images/playstation.png" alt="Playstation"></li>
+                </ul>
+        </div>
+    </div>
+    </section>
+    <div class="conteudo">
+        <main>
+            <section class="promocao">
+                <h2>Promoção</h2>
+                <article class="produtos">
+                    <a href="#">
+                    <img src="https://via.placeholder.com/320x320" />
+                    <h3>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod totam repellendus fugit dolorem culpa, perspiciatis id nemo optio sunt quidem ipsum, hic sit soluta ex fuga quae officia debitis accusantium.
+                    </h3>
+                    </a>
+                </article>
+            </section>
+        </main>
+
+    </div>
+
+    <script>
+        function clickMenu() {
+            var menuList = document.getElementById("menu-list");
+            if (menuList.style.display === "block") {
+                menuList.style.display = "none";
+            } else {
+                menuList.style.display = "block";
+            }
+        }
+
+        window.addEventListener("scroll", function() {
+            var headerTitle = document.getElementById("header-title");
+            if (window.scrolly > 0) {
+                headerTitle.style.display = "none";
+            } else {
+                headerTitle.style.display = "block";
+            }
+        });
+    </script>
 </body>
 </html>

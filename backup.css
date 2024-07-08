@@ -100,3 +100,17 @@ input[type="search"] {
     box-sizing: border-box;
     
 }
+
+
+ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão */
+    margin: 16px 0; /* Adiciona margem para separar a lista de outros elementos */
+}
+
+li {
+    margin: 8px 0; /* Adiciona margem entre os itens da lista */
+    color: #fff; /* Adiciona cor ao texto dos itens da lista */
+}.container
+
+
