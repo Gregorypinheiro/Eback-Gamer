@@ -12,9 +12,9 @@ window.addEventListener("scroll", function() {
     var header = document.querySelector("header.container");
     if (window.scrollY > 0) {
         headerTitle.style.display = "none";
-        headerTitle.style.paddingTop = "16px";
+        header.style.paddingTop = "16px"; // Ajuste o valor conforme necessário
     } else {
         headerTitle.style.display = "block";
-        headerTitle.style.paddingTop = "4px";
+        header.style.paddingTop = "16px"; // Ajuste o valor conforme necessário
     }
 });
