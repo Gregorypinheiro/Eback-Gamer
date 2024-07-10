@@ -5,30 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eback Gamer</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <header class="container">
-        <div class="menu-container">
-            <h1 id="header-title">Eback Gamer</h1>
-        <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
-            <i class="material-symbols-outlined" >menu</i>
-            <span>Departamentos</span>
-            <i class="material-symbols-outlined">arrow_downward</i>
-        </i>
-        <form>
-            <input type="search" placeholder="Digite o que você procura">
-        </form>
+        <div class="menu-container" id="menu-container1">
+            <h1 id="header-title1">Eback Gamer</h1>
+            <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+                <i class="material-symbols-outlined">menu</i>
+                <span>Departamentos</span>
+                <i class="material-symbols-outlined">arrow_downward</i>
+            </i>
+            <form>
+                <input type="search" placeholder="Digite o que você procura">
+            </form>
+        </div>
+        <div class="menu-container2" id="menu-container2" style="display: none;">
+            <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+                <i class="material-symbols-outlined">menu</i>
+                <span>Departamentos</span>
+                <i class="material-symbols-outlined">arrow_downward</i>
+            </i>
+            <form>
+                <input type="search" placeholder="Digite o que você procura">
+            </form>
+            <div class="carrinho">
+                <a class="material-symbols-outlined">
+                    shopping_cart
+                    <h4>CARRINHO</h4>
+                </a>
+            </div>
         </div>
         <menu id="menu-list">
             <ul>
                 <li>
                     Hardware
-
                     <ul class="submenu">
                         <li>
                             <a href="#">Placa Mãe</a>
@@ -45,7 +60,6 @@
             <ul>
                 <li>
                     Video Games
-
                     <ul class="submenu">
                         <li>
                             <a href="#">Console</a>
@@ -62,39 +76,126 @@
         </menu>
     </header>
     <section id="about">
-    <div class="loja">
-        <img src="images/15351803600_23202d6113_b.jpg" alt="loja de infotmatica" />
-        <div>
-            <h2>Sobre a loja</h2>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit odio voluptates deleniti, incidunt error inventore modi sequi fuga numquam mollitia! Exercitationem, cumque tenetur culpa asperiores consectetur architecto repudiandae laborum omnis.
-                </p>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit odio voluptates deleniti, incidunt error inventore modi sequi fuga numquam mollitia! Exercitationem, cumque tenetur culpa asperiores consectetur architecto repudiandae laborum omnis.
-                </p>
-                <ul class="brands-list"> 
+        <div class="loja">
+            <img src="images/15351803600_23202d6113_b.jpg" alt="loja de informática" />
+            <div>
+                <h2>Sobre a loja</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit odio voluptates deleniti, incidunt error inventore modi sequi fuga numquam mollitia! Exercitationem, cumque tenetur culpa asperiores consectetur architecto repudiandae laborum omnis.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit odio voluptates deleniti, incidunt error inventore modi sequi fuga numquam mollitia! Exercitationem, cumque tenetur culpa asperiores consectetur architecto repudiandae laborum omnis.</p>
+                <ul class="brands-list">
                     <li><img src="images/nintendo.png" alt="Nintendo"></li>
                     <li><img src="images/xbox.png" alt="Xbox"></li>
                     <li><img src="images/playstation.png" alt="Playstation"></li>
                 </ul>
+            </div>
         </div>
-    </div>
     </section>
-    <div class="conteudo">
-        <main>
-            <section class="promocao">
-                <h2>Promoção</h2>
-                <article class="produtos">
-                    <a href="#">
+    <section>
+        <h2>Promoção</h2>
+        <div class="container conteudo">
+            <article class="produtos">
+                <a href="#">
                     <img src="https://via.placeholder.com/320x320" />
-                    <h3>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod totam repellendus fugit dolorem culpa, perspiciatis id nemo optio sunt quidem ipsum, hic sit soluta ex fuga quae officia debitis accusantium.
-                    </h3>
-                    </a>
-                </article>
-            </section>
-        </main>
-    </div>
+                    <h3>Nome do Produto</h3>
+                    <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus architecto voluptatum aliquid ratione voluptatem enim </h4>
+                    <div class="comprar">
+                        <span class="material-symbols-outlined">
+                            add_shopping_cart<h4>COMPRAR</h4>
+                        </span>
+                    </div>
+                </a>
+            </article>
+            <article class="produtos">
+                <a href="#">
+                    <img src="https://via.placeholder.com/320x320" />
+                    <h3>Nome do Produto</h3>
+                    <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus architecto voluptatum aliquid ratione voluptatem enim </h4>
+                    <div class="comprar">
+                        <span class="material-symbols-outlined">
+                            add_shopping_cart<h4>COMPRAR</h4>
+                        </span>
+                    </div>
+                </a>
+            </article>
+            <article class="produtos">
+                <a href="#">
+                    <img src="https://via.placeholder.com/320x320" />
+                    <h3>Nome do Produto</h3>
+                    <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus architecto voluptatum aliquid ratione voluptatem enim </h4>
+                    <div class="comprar">
+                        <span class="material-symbols-outlined">
+                            add_shopping_cart<h4>COMPRAR</h4>
+                        </span>
+                    </div>
+                </a>
+            </article>
+            <article class="produtos">
+                <a href="#">
+                    <img src="https://via.placeholder.com/320x320" />
+                    <h3>Nome do Produto</h3>
+                    <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus architecto voluptatum aliquid ratione voluptatem enim </h4>
+                    <div class="comprar">
+                        <span class="material-symbols-outlined">
+                            add_shopping_cart<h4>COMPRAR</h4>
+                        </span>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+    <section>
+        <h2>LANÇAMENTOS</h2>
+        <div class="lancamentos">
+            <article class="novos">
+                <a href="#">
+                    <img src="https://via.placeholder.com/320x320" />
+                    <h3>Nome do Produto</h3>
+                    <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus architecto voluptatum aliquid ratione voluptatem enim </h4>
+                    <div class="comprar">
+                        <span class="material-symbols-outlined">
+                            add_shopping_cart<h4>COMPRAR</h4>
+                        </span>
+                    </div>
+                </a>
+            </article>
+            <article class="novos">
+                <a href="#">
+                    <img src="https://via.placeholder.com/320x320" />
+                    <h3>Nome do Produto</h3>
+                    <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus architecto voluptatum aliquid ratione voluptatem enim </h4>
+                    <div class="comprar">
+                        <span class="material-symbols-outlined">
+                            add_shopping_cart<h4>COMPRAR</h4>
+                        </span>
+                    </div>
+                </a>
+            </article>
+            <article class="novos">
+                <a href="#">
+                    <img src="https://via.placeholder.com/320x320" />
+                    <h3>Nome do Produto</h3>
+                    <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus architecto voluptatum aliquid ratione voluptatem enim </h4>
+                    <div class="comprar">
+                        <span class="material-symbols-outlined">
+                            add_shopping_cart<h4>COMPRAR</h4>
+                        </span>
+                    </div>
+                </a>
+            </article>
+            <article class="novos">
+                <a href="#">
+                    <img src="https://via.placeholder.com/320x320" />
+                    <h3>Nome do Produto</h3>
+                    <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus architecto voluptatum aliquid ratione voluptatem enim </h4>
+                    <div class="comprar">
+                        <span class="material-symbols-outlined">
+                            add_shopping_cart<h4>COMPRAR</h4>
+                        </span>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
     <script src="main.js"></script>
 </body>
 </html>
