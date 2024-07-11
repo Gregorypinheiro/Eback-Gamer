@@ -26,13 +26,9 @@ header {
     align-items: center;
     padding: 22px 0 0;
     border-bottom: 1px solid #ccc;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
     max-width: 1024px;
-    
-    
 }
+
 .menu-container{
     display: flex;
     align-items: center;
@@ -54,22 +50,11 @@ header {
     
 }
 
-.menu-container2 form {
-    display: flex;
-    align-items: center;
-    border: #424242;
-    padding: 12px;
-    background: #424242;
-    font-size: 32px;
-    margin-left: 24px;
-    border-radius: 4px;
-    width: 100%;
-}
-
+.menu-container2 form,
 .menu-container form {
     display: flex;
     align-items: center;
-    border: #424242;
+    border: none;
     padding: 12px;
     background: #424242;
     font-size: 32px;
@@ -86,6 +71,7 @@ header {
     border-radius: 4px;
     margin-left: 16px;
     display: flex;
+    margin-right: 36px;
     
 }
 
@@ -98,7 +84,6 @@ a{
     text-decoration: none;
 }
 
-
 .comprar span{
     background-color: #009e2a;
     color: #fff;
@@ -107,6 +92,7 @@ a{
     border-radius: 4px;
     display: flex;
     justify-content:center;
+    margin-top: 6px;
     
 }
 
@@ -115,28 +101,26 @@ a{
     cursor: pointer;
 }
 
-
-
 h1 {
     position: absolute;
     top: 8px;
+    color:#fff;
+    margin-left: 32px;
 }
-
 
 h2, h3, h4 {
     color: #fff;
 }
 
+h4 {
+    margin-top: 6px;
+}
+
 h2{
-    padding: 12px 32px 0 ;
+    padding: 12px 32px;
 }
 
-h1 {
-    color:#fff;
-    margin-left: 32px;
-}
-
-#burguer {
+#burguer1, #burguer2 {
     display: flex;
     align-items: center;
     background-color: #e90313;
@@ -150,31 +134,23 @@ h1 {
     margin-left: 32px;
 }
 
-#burguer span {
-    margin-left: 8px;
-    margin-right: 8px;
-}
-
 i#burguer:hover{
     background-color: #a01a23;
     color: rgb(206, 203, 203);
     cursor: pointer;
 }
 
-
-
 input[type="search"] {
     padding: 6px;
     margin-left: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 200px;
-    box-sizing: border-box;
-    background-color: #525252;
     border: none;
+    border-radius: 4px;
+    width: 100%;
+    background-color: #525252;
+    box-sizing: 16px;
     font-size: 16px;
     color: #ccc;
-    width: 100%;
+    
 }
 
 #menu-list {
@@ -183,10 +159,10 @@ input[type="search"] {
     align-items: flex-start;
     color: #fff;
     background-color: #525252;
-    padding: 8px;
+    padding: 8px 80px;
     border-radius: 5px;
-    z-index: 999;
-    
+    z-index: 1000;
+    position: absolute;
 }
 
 #menu-list ul li a {
@@ -253,7 +229,7 @@ input[type="search"] {
     margin-left: 32px;
     margin-right: 32px;
     margin-bottom: 24px;
-    grid-template-columns: repeat(6, 24%);
+    grid-template-columns: repeat(4, 24%);
     column-gap: 1%;
     row-gap: 5%;
 }
@@ -268,3 +244,11 @@ input[type="search"] {
     row-gap: 5%;
 }
 
+#about {
+    margin-right: 36px;
+    margin-left: 36px;
+}
+
+#about {
+
+}
