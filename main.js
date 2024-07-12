@@ -1,5 +1,5 @@
 function clickMenu() {
-    var menuList = document.getElementById("menu-list");
+    var menuList = document.getElementById("menu-list1");
     var burguerButton = document.querySelector(".menu-container i#burguer") || document.querySelector(".menu-container2 i#burguer");
 
     if (menuList.style.display === "block") {
