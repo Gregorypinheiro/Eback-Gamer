@@ -26,7 +26,8 @@ header {
     align-items: center;
     padding: 22px 0 0;
     border-bottom: 1px solid #ccc;
-    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .menu-container{
@@ -47,7 +48,6 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    
 }
 
 .menu-container2 form,
@@ -72,7 +72,6 @@ header {
     margin-left: 16px;
     display: flex;
     margin-right: 36px;
-    
 }
 
 .carrinho a:hover {
@@ -93,7 +92,6 @@ a{
     display: flex;
     justify-content:center;
     margin-top: 6px;
-    
 }
 
 .comprar span:hover {
@@ -106,7 +104,6 @@ h1 {
     top: 0px;
     color:#fff;
     margin-left: 32px;
-    
 }
 
 h2, h3, h4 {
@@ -152,7 +149,6 @@ input[type="search"] {
     box-sizing: 16px;
     font-size: 16px;
     color: #ccc;
-    
 }
 
 #menu-list1 {
@@ -170,14 +166,12 @@ input[type="search"] {
 
 #menu-list1 ul li a {
     color: #fff;
-    
-    
 }
 
 #menu-list1 ul {
-    list-style-type: none; /* Remove os marcadores da lista */
-    padding: 0; /* Remove o padding padrão */
-    margin: 8px 0; /* Adiciona margem para separar a lista de outros elementos */
+    list-style-type: none;
+    padding: 0; 
+    margin: 8px 0; 
     font-size:24px;
     background-color: #525252
     
@@ -242,7 +236,7 @@ input[type="search"] {
     margin-left: 32px;
     margin-right: 32px;
     margin-bottom: 24px;
-    grid-template-columns: repeat(6, 24%);
+    grid-template-columns: repeat(4, 24%);
     column-gap: 1%;
     row-gap: 5%;
 }
@@ -252,6 +246,125 @@ input[type="search"] {
     margin-left: 36px;
 }
 
+#about h2 {
+    font-size: 2em;
+}
+
+#about p {
+    font-size: 1em;
+}
+
 .produtos:hover, .novos:hover {
     transform: scale(1.05);
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        padding: 12px;
+    }
+    
+    .menu-container, .menu-container2 {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px;
+    }
+    
+    h1 {
+        margin-left: 0;
+        font-size: 1.5em;
+    }
+    
+    .menu-container form, .menu-container2 form {
+        margin-left: 0;
+        margin-top: 12px;
+        width: 100%;
+    }
+
+    .menu-container i#burguer1, .menu-container2 i#burguer2 {
+        margin-left: 0;
+        margin-top: 12px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .brands-list img {
+        width: 90px;
+    }
+
+    .carrinho a {
+        margin-top: 12px;
+        width: 100%;
+        margin-left: 40px;
+        justify-content: center;
+        
+    }
+    
+    .conteudo, .lancamentos {
+        grid-template-columns: repeat(1, 100%);
+        row-gap: 20px;
+    }
+    
+    .loja {
+        display: block;
+    }
+    
+    .loja img {
+        max-width: 100%;
+    }
+
+    .produtos img, .novos img {
+        max-width: 100%;
+    }
+    
+    .comprar span, h4 {
+        margin-right: 12px;
+    }
+    
+    #menu-list1 {
+        top: 60px;
+        left: 10px;
+        width: calc(100% - 20px);
+        padding: 8px;
+    }
+    
+    #about {
+        margin: 0;
+    }
+
+    .foto-loja {
+        width: 90%;
+        margin-left: 18px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .lancamentos {
+        font-size: 1,5em;
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .conteudo {
+        font-size: 1,5em;
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .comprar span, h4 {
+        margin-right: 32px;
+    }
+
+    .form1{
+        margin-right: 50px;
+        display: none;
+    }
+
+    .form2 {
+        display: none;
+        color: #009e2a;
+    }
+
+    .carrinho a {
+        padding: 16px;
+        margin-right: 50px;
+    }
 }
