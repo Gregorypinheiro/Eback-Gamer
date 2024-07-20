@@ -18,7 +18,7 @@ window.addEventListener('scroll', function() {
     var menuContainer2 = document.getElementById('menu-container2');
     var headerTitle1 = document.getElementById('header-title1');
 
-    if (window.scrollY > 1) { // Ajuste este valor conforme necessário
+    if (window.scrollY > 1) { 
         menuContainer1.style.display = 'none';
         menuContainer2.style.display = 'flex';
         menuContainer2.style.position = 'fixed';
